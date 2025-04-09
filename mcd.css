@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Speedee;
+    src: url("./fonts/Speedee-Regular.woff2") format("woff2");  
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: icomoon;
+    src: url("./fonts/icomoon.woff") format("woff"); 
+    font-weight: 400;
+    font-style: normal;
+    font-display: block
+}
+* {
+    box-sizing: border-box;
+    font-family: Speedee, icomoon;
+}
+html {
+    font-size: 1pc;
+    line-height: 1.15;
+}
+body {
+    margin: 0;
+    letter-spacing: -.15px;
+    line-height: 24px;
+    color: #292929;
+    font-size: 14px;
+}
+button {
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #292929;
+    background-color: transparent;
+}
+.header_container {
+    display: block;
+    box-shadow: 0 .0625rem .5rem 0 rgba(0,0,0,.04),0 .0625rem .3125rem 0 rgba(0,0,0,.04);
+    padding-top: 15px;
+}
+.header {
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: 165px auto auto auto;
+    margin: 0 auto;
+}
+.header_logo {
+    width: 81pt;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 81pt;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+.header_top {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+.header_bottom {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-column-end: 5;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 26px;
+}
+.header_top_left {
+    display: flex;
+    align-items: center;
+}
+.header_top_right {
+    display: flex;
+}
+.language_nav {
+    margin-right: 30px;
+}
+.language_nav_toggle {
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 0;
+    color: #292929;
+}
+.icon-arrow-down::before {
+    content: "";
+}
+.icon::before {
+    font-size: 6px;
+    margin-left: 5px;
+}
+.icon {  
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.arrow {
+    font-size: 20px;
+}
+.nav_list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+}
+.nav_list_item {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+}
+.nav_list_item:not(:last-child) {
+    margin-right: 30px;
+}
+.nav_list_item_link {
+    font-size: 14px;
+}
