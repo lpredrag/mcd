@@ -204,3 +204,32 @@ a {
     font-size: 10px;
     line-height: 14.5px;
 }
+.footer {
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 75px;
+}
+.footer_top {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+.footer_top_title {
+    font-size: 1pc;
+    text-align: left;
+}
+.footer_top_list {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+.footer_rule {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 0;
+    border-top: 1px solid #a1a1a1;
+}
