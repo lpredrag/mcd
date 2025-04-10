@@ -3,14 +3,21 @@
     src: url("./fonts/Speedee-Regular.woff2") format("woff2");  
     font-style: normal;
     font-weight: 400;
-    font-display: swap
+    font-display: swap;
+}
+@font-face {
+    font-family: Speedee;
+    src: url("./fonts/Speedee-Bold.woff2") format("woff2"); 
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
 }
 @font-face { 
     font-family: icomoon;
     src: url("./fonts/icomoon.woff") format("woff"); 
     font-weight: 400;
     font-style: normal;
-    font-display: block
+    font-display: block;
 }
 * {
     box-sizing: border-box;
@@ -20,7 +27,6 @@ body {
     margin: 0;
     letter-spacing: -.15px;
     line-height: 24px;
-    color: #292929;
     font-size: 14px;
 }
 a {
@@ -130,6 +136,7 @@ a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1pc;
+    display: inline-block;
 }
 .header_bottom {
     grid-column-start: 2;
@@ -148,4 +155,52 @@ a {
     margin: 0 auto;
     max-width: 1170px;
     display: block;
+}
+.column_item {
+    display: flex;
+    margin-top: 100px;
+}
+.item_image {
+    width: 65%;
+    float: left;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mcd_promo_img {
+    position: relative;
+    top: 0;
+    width: 100%;
+    object-fit: contain;
+}
+.item_text {
+    width: 35%;
+    float: left;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0;
+}
+.item_text_title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.item_text_body {
+    padding-bottom: 25px;
+}
+.item_text_body_main {
+    font-size: 16px;
+}
+.item_text_link {
+    text-decoration: underline;
+    color: #006bae;
+}
+.item_text_body_legal {
+    font-size: 10px;
+    line-height: 14.5px;
 }
